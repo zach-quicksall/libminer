@@ -13,3 +13,6 @@ packages in each of the user's libraries
 \description{
 Provide a brief summary of the libraries on your machine
 }
+\examples{
+lib_summary()
+}
