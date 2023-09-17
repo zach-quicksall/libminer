@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+#' lib_summary()
 lib_summary <- function() {
 
   ## Get list of installed packages
