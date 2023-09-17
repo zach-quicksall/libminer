@@ -4,7 +4,11 @@
 \alias{lib_summary}
 \title{R Library Summary}
 \usage{
-lib_summary()
+lib_summary(sizes = FALSE)
+}
+\arguments{
+\item{sizes}{logical indicating whether to calculate total library size.
+Default \code{FALSE}.}
 }
 \value{
 A \code{data.frame} containing the count of

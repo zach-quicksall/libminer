@@ -8,5 +8,12 @@ test_that("lib_summary returns expected result", {
 })
 
 test_that("lib_summary fails appropriately", {
-  expect_error(lib_summary("foo"), "unused argument") # This is essentially a string match
+  expect_error(lib_summary("foo"), "'sizes' must be TRUE or FALSE.") # This is essentially a string match
+})
+
+test_that("sizes argument works", {
+  res <- lib_summary(sizes = TRUE)
+  expect_equal(names(res), c("Library","n_packages", "lib_size"))
+  expect_type(res$lib_size, "double")
+  expect_equal(ncol(res), 3)
 })
